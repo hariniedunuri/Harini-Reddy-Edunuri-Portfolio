@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harini Reddy Edunuri | Data Analyst & Analytics Professional</title>
+
+<template id="__bundler_thumbnail" data-bg-color="#fefcf8">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="#fefcf8"/>
+    <text x="100" y="110" font-size="56" font-weight="700" text-anchor="middle" fill="#8b6f47" font-family="serif">HR</text>
+  </svg>
+</template>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Keyframe animations */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUpFade { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(-60px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes slideInRight { from { opacity: 0; transform: translateX(60px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+@keyframes countUp { from { opacity: 0; } to { opacity: 1; } }
+@keyframes titleReveal { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+@keyframes subtitleReveal { 0% { opacity: 0; transform: translateY(15px); } 100% { opacity: 1; transform: translateY(0); } }
+@keyframes scrollIndicator { 0%, 100% { opacity: 0.5; transform: translateY(0); } 50% { opacity: 1; transform: translateY(8px); } }
+@keyframes shimmer { 0% { background-position: -1000px 0; } 100% { background-position: 1000px 0; } }
+@keyframes lineExpand { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes timelineItemFade { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #fefcf8;
+  color: #2a2520;
+  line-height: 1.6;
+  overflow-x: hidden;
+  opacity: 1 !important;
+}
+[data-animate] { opacity: 0; animation: none; }
+[data-animate].in-view { animation: slideInLeft 0.8s ease-out forwards; }
+a { color: #8b6f47; text-decoration: none; transition: color 0.3s ease; }
+a:hover { color: #6d5836; }
+</style>
+</head>
+<body>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+});
+</script>
+
+<!-- NAV -->
+<nav style="position: fixed; top: 0; width: 100%; background: rgba(254, 252, 248, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(232, 223, 212, 0.5); padding: 16px 50px; z-index: 1000; display: flex; justify-content: center; align-items: center; animation: slideDownFade 0.6s ease-out;">
+  <div style="display: flex; gap: 50px; align-items: center;">
+    <a href="#home" style="color: #6d5f54; font-size: 13px; font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47'" onmouseout="this.style.color='#6d5f54'">Home</a>
+    <a href="#about" style="color: #6d5f54; font-size: 13px; font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47'" onmouseout="this.style.color='#6d5f54'">About</a>
+    <a href="#experience" style="color: #6d5f54; font-size: 13px; font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47'" onmouseout="this.style.color='#6d5f54'">Experience</a>
+    <a href="#projects" style="color: #6d5f54; font-size: 13px; font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47'" onmouseout="this.style.color='#6d5f54'">Projects</a>
+    <a href="#skills" style="color: #6d5f54; font-size: 13px; font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47'" onmouseout="this.style.color='#6d5f54'">Skills</a>
+    <a href="#contact" style="background: #8b6f47; color: white; padding: 10px 24px; border-radius: 6px; font-size: 12px; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.background='#6d5836';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 16px rgba(139, 111, 71, 0.2)'" onmouseout="this.style.background='#8b6f47';this.style.transform='translateY(0)';this.style.boxShadow='none'">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" style="padding: 80px 50px; background: linear-gradient(135deg, #fefcf8 0%, #faf6f0 100%); min-height: 85vh; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 50px;">
+  <div style="text-align: left;">
+    <div style="display: inline-block; background: #f0e8de; color: #8b6f47; padding: 8px 16px; border-radius: 20px; font-size: 11px; font-weight: 600; letter-spacing: 1px; margin: 0 0 24px 0; animation: slideUpFade 0.8s ease-out;">DATA ANALYST & ANALYTICS PROFESSIONAL</div>
+    
+    <h1 style="font-family: 'Syne', sans-serif; font-size: 72px; font-weight: 700; margin: 0 0 8px 0; color: #2a2520; line-height: 1; animation: titleReveal 0.9s ease-out 0.1s backwards;">Harini Reddy Edunuri</h1>
+    
+    <h2 style="font-size: 28px; font-weight: 600; color: #8b6f47; margin: 0 0 40px 0; line-height: 1.2; animation: subtitleReveal 0.9s ease-out 0.2s backwards;">Solving Real Business Problems Through Analytics</h2>
+    
+    <p style="font-size: 16px; line-height: 1.8; color: #5a4f47; margin: 0 0 40px 0; max-width: 500px; animation: slideUpFade 0.8s ease-out 0.3s backwards;">Master's in Data Analytics Engineering (4.0 GPA). I transform complex data into insights that help business decisions. I work in financial analytics, AML/KYC, and predictive modeling.</p>
+    
+    <div style="display: flex; gap: 16px; justify-content: flex-start; margin-bottom: 60px; animation: slideUpFade 0.8s ease-out 0.4s backwards;">
+      <a href="#contact" style="padding: 14px 32px; background: #8b6f47; color: white; border-radius: 6px; font-weight: 600; font-size: 14px; box-shadow: 0 4px 12px rgba(139, 111, 71, 0.15); transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 24px rgba(139, 111, 71, 0.25)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 12px rgba(139, 111, 71, 0.15)'">Hire Me</a>
+      <a href="Edunuri_Harini Resume.pdf" target="_blank" style="padding: 14px 32px; border: 2px solid #8b6f47; color: #8b6f47; border-radius: 6px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.background='#f0e8de';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='transparent';this.style.transform='translateY(0)'">View Resume</a>
+    </div>
+    
+    <div style="display: flex; gap: 24px; justify-content: flex-start; font-size: 14px; animation: slideUpFade 0.8s ease-out 0.5s backwards;">
+      <a href="https://linkedin.com/in/harinireddy07/" style="color: #8b6f47; font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">LinkedIn</a>
+      <span style="color: #ddd;">•</span>
+      <a href="https://github.com/hariniedunuri" style="color: #8b6f47; font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">GitHub</a>
+      <span style="color: #ddd;">•</span>
+      <a href="mailto:harini.edunuri16@gmail.com" style="color: #8b6f47; font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">Email</a>
+    </div>
+  </div>
+  
+  <div style="animation: slideInRight 0.9s ease-out 0.3s backwards;">
+    <div style="background: linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%); border-radius: 16px; width: 280px; height: 360px; overflow: hidden; box-shadow: 0 20px 60px rgba(139, 111, 71, 0.15); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);" onmouseover="this.style.boxShadow='0 30px 80px rgba(139, 111, 71, 0.25)';this.style.transform='translateY(-8px)'" onmouseout="this.style.boxShadow='0 20px 60px rgba(139, 111, 71, 0.15)';this.style.transform='translateY(0)'">
+      <img src="photo.jpg" alt="Harini Reddy Edunuri" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+  </div>
+</section>
+
+<!-- SCROLL INDICATOR -->
+<div style="text-align: center; padding: 20px 0; animation: scrollIndicator 2s ease-in-out infinite; position: relative; z-index: 1;">
+  <div style="font-size: 12px; color: #8b6f47; font-weight: 500; margin-bottom: 8px;">Scroll to explore</div>
+  <div style="font-size: 20px; animation: scrollIndicator 2s ease-in-out infinite;">↓</div>
+</div>
+
+<!-- STATS -->
+<section data-animate style="padding: 80px 50px; background: #ffffff; max-width: 1400px; margin: 0 auto;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
+    <div style="animation: slideInLeft 0.8s ease-out;">
+      <div style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; color: #8b6f47; margin-bottom: 8px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">2+</div>
+      <p style="font-size: 14px; color: #6d5f54; margin: 0;">Years of Analytics Experience</p>
+    </div>
+    <div style="animation: slideInLeft 0.8s ease-out 0.1s backwards;">
+      <div style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; color: #8b6f47; margin-bottom: 8px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">15+</div>
+      <p style="font-size: 14px; color: #6d5f54; margin: 0;">Dashboards & Reports Built</p>
+    </div>
+    <div style="animation: slideInLeft 0.8s ease-out 0.2s backwards;">
+      <div style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; color: #8b6f47; margin-bottom: 8px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">4.0</div>
+      <p style="font-size: 14px; color: #6d5f54; margin: 0;">Master's GPA</p>
+    </div>
+    <div style="animation: slideInLeft 0.8s ease-out 0.3s backwards;">
+      <div style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; color: #8b6f47; margin-bottom: 8px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">4</div>
+      <p style="font-size: 14px; color: #6d5f54; margin: 0;">Featured Projects</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" data-animate style="padding: 120px 50px; background: #faf6f0; max-width: 1200px; margin: 0 auto;">
+  <h2 style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; margin-bottom: 60px; text-align: center; animation: slideInLeft 0.8s ease-out;">About Me</h2>
+  
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+    <div style="animation: slideInLeft 0.8s ease-out;">
+      <p style="font-size: 15px; line-height: 1.9; color: #5a4f47; margin-bottom: 20px;">I'm a data analyst with a proven track record of translating complex datasets into strategic business insights. My experience spans financial compliance (AML/KYC), commercial analytics for life sciences, and predictive modeling across diverse industries.</p>
+      
+      <p style="font-size: 15px; line-height: 1.9; color: #5a4f47; margin-bottom: 20px;">At Accure, I engineered a Snowflake data warehouse that tiered 2,005 customers and flagged 290 AML-escalation candidates reducing manual compliance review by 85%. At CustomerInsights.AI, I built 15+ dashboards for pharmaceutical clients, cutting report delivery time from 5 days to 2.</p>
+      
+      <p style="font-size: 15px; line-height: 1.9; color: #5a4f47;">I'm passionate about solving real business problems. Whether it's identifying pricing opportunities, predicting user churn, or uncovering public health disparities I deliver analytics that matter.</p>
+    </div>
+    
+    <div style="animation: slideInRight 0.8s ease-out;">
+      <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; padding: 40px; display: flex; flex-direction: column; gap: 32px; transition: all 0.4s ease;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.1)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+        <div style="border-bottom: 1px solid #e8dfd4; padding-bottom: 28px;">
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #8b6f47; margin-bottom: 10px; font-weight: 700;">Education</div>
+          <h3 style="font-size: 16px; font-weight: 600; color: #2a2520; margin: 0 0 4px 0;">M.S. Data Analytics Engineering</h3>
+          <p style="font-size: 13px; color: #6d5f54; margin: 0;">George Mason University | Graduation: May 2026</p>
+          <p style="font-size: 13px; color: #8b6f47; font-weight: 600; margin-top: 6px;">GPA: 4.0/4.0</p>
+        </div>
+        
+        <div style="border-bottom: 1px solid #e8dfd4; padding-bottom: 28px;">
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #8b6f47; margin-bottom: 10px; font-weight: 700;">Core Competencies</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="background: #f0e8de; color: #8b6f47; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47'">Data Analysis</span>
+            <span style="background: #f0e8de; color: #8b6f47; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47'">SQL & Python</span>
+            <span style="background: #f0e8de; color: #8b6f47; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47'">Power BI</span>
+            <span style="background: #f0e8de; color: #8b6f47; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47'">Business Intelligence</span>
+          </div>
+        </div>
+        
+        <div>
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #8b6f47; margin-bottom: 10px; font-weight: 700;">Looking For</div>
+          <h3 style="font-size: 16px; font-weight: 600; color: #2a2520; margin: 0;">Full-Time Analytics Roles</h3>
+          <p style="font-size: 13px; color: #6d5f54; margin-top: 4px;">Data Analyst • Business Analyst • BI Analyst • Product Analyst</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE TIMELINE -->
+<section id="experience" data-animate style="padding: 120px 50px; background: #ffffff; max-width: 1000px; margin: 0 auto;">
+  <h2 style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; margin-bottom: 80px; text-align: center; animation: slideInLeft 0.8s ease-out;">Experience</h2>
+  
+  <div style="display: flex; flex-direction: column; gap: 0; position: relative;">
+    <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, #8b6f47 0%, #d4a574 100%); transform: translateX(-50%); animation: lineExpand 1s ease-out forwards; transform-origin: top;"></div>
+    
+    <!-- Experience 1 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px; align-items: start; animation: timelineItemFade 0.8s ease-out;">
+      <div style="text-align: right; padding-right: 60px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(-10px)'" onmouseout="this.style.transform='translateX(0)'">
+        <h3 style="font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: #2a2520; margin: 0 0 4px 0;">Data Analyst</h3>
+        <p style="font-size: 14px; color: #8b6f47; font-weight: 600; margin: 0 0 12px 0;">Accure</p>
+        <p style="font-size: 13px; color: #999; margin: 0 0 16px 0;">Jan 2026 - Present</p>
+        <ul style="list-style: none; padding: 0; margin: 0; text-align: right;">
+          <li style="font-size: 13px; color: #5a4f47; margin-bottom: 8px; line-height: 1.6; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47';this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#5a4f47';this.style.transform='translateX(0)'">Tiered 2,005 customers into risk bands & flagged 290 AML-escalation candidates</li>
+          <li style="font-size: 13px; color: #5a4f47; margin-bottom: 8px; line-height: 1.6; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47';this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#5a4f47';this.style.transform='translateX(0)'">Built Snowflake warehouse with 8 interconnected tables, reducing reconciliation time by 40%</li>
+          <li style="font-size: 13px; color: #5a4f47; margin-bottom: 8px; line-height: 1.6; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47';this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#5a4f47';this.style.transform='translateX(0)'">Generated Customer 360 profiles, speeding up compliance audits by 50%</li>
+          <li style="font-size: 13px; color: #5a4f47; margin-bottom: 8px; line-height: 1.6; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47';this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#5a4f47';this.style.transform='translateX(0)'">Delivered KYC intelligence platform across 5 Agile sprints on 6-person team</li>
+        </ul>
+      </div>
+      <div style="position: relative; padding-left: 40px;">
+        <div style="position: absolute; left: -41px; top: 5px; width: 12px; height: 12px; background: #8b6f47; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 2px #8b6f47; transition: all 0.3s ease;" onmouseover="this.parentElement.style.setProperty('--dot-shadow', '0 0 12px rgba(139, 111, 71, 0.6)')" onmouseout="this.parentElement.style.setProperty('--dot-shadow', '0 0 0 2px #8b6f47')"></div>
+      </div>
+    </div>
+    
+    <!-- Experience 2 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px; align-items: start; animation: timelineItemFade 0.8s ease-out 0.2s backwards;">
+      <div style="position: relative; padding-right: 40px;">
+        <div style="position: absolute; right: -41px; top: 5px; width: 12px; height: 12px; background: #d4a574; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 2px #d4a574; transition: all 0.3s ease;" onmouseover="this.parentElement.style.setProperty('--dot-shadow', '0 0 12px rgba(212, 165, 116, 0.6)')" onmouseout="this.parentElement.style.setProperty('--dot-shadow', '0 0 0 2px #d4a574')"></div>
+      </div>
+      <div style="padding-left: 60px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'" onmouseout="this.style.transform='translateX(0)'">
+        <h3 style="font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: #2a2520; margin: 0 0 4px 0;">Data Analyst</h3>
+        <p style="font-size: 14px; color: #8b6f47; font-weight: 600; margin: 0 0 12px 0;">CustomerInsights.AI</p>
+        <p style="font-size: 13px; color: #999; margin: 0 0 16px 0;">Jan 2023 - Aug 2024</p>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-size: 13px; color: #5a4f47; margin-bottom: 8px; line-height: 1.6; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47';this.style.transform='translateX(5px)'" onmouseout="this.style.color='#5a4f47';this.style.transform='translateX(0)'">Built 15+ commercial analytics dashboards for 8+ life sciences clients</li>
+          <li style="font-size: 13px; color: #5a4f47; margin-bottom: 8px; line-height: 1.6; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47';this.style.transform='translateX(5px)'" onmouseout="this.style.color='#5a4f47';this.style.transform='translateX(0)'">Cut report turnaround from 5 days to 2 days through data standardization</li>
+          <li style="font-size: 13px; color: #5a4f47; margin-bottom: 8px; line-height: 1.6; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47';this.style.transform='translateX(5px)'" onmouseout="this.style.color='#5a4f47';this.style.transform='translateX(0)'">Standardized dashboard workflow across 12+ client engagements</li>
+          <li style="font-size: 13px; color: #5a4f47; margin-bottom: 8px; line-height: 1.6; transition: all 0.3s ease;" onmouseover="this.style.color='#8b6f47';this.style.transform='translateX(5px)'" onmouseout="this.style.color='#5a4f47';this.style.transform='translateX(0)'">Reduced rework and cut delivery time by 30% via repeatable processes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section id="projects" data-animate style="padding: 120px 50px; background: #faf6f0; max-width: 1400px; margin: 0 auto;">
+  <h2 style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; margin-bottom: 16px; text-align: center; animation: slideInLeft 0.8s ease-out;">Featured Projects</h2>
+  <p style="text-align: center; color: #6d5f54; font-size: 16px; margin-bottom: 80px; animation: slideInLeft 0.8s ease-out 0.1s backwards;">Analytics work that drives measurable business impact</p>
+  
+  <div style="display: grid; gap: 32px;">
+    <!-- Project 1 -->
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; overflow: hidden; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 20px 60px rgba(45, 90, 79, 0.15)';this.style.transform='translateY(-8px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <div style="display: grid; grid-template-columns: 300px 1fr; gap: 0;">
+        <div style="background: linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%); padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; transition: all 0.4s ease;" onmouseover="this.style.background='linear-gradient(135deg, #e8dfd4 0%, #d4d0c8 100%)'" onmouseout="this.style.background='linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%)'">
+          <div style="font-size: 48px; margin-bottom: 16px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">📊</div>
+          <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 600;">Public Health Analytics</div>
+        </div>
+        <div style="padding: 40px;">
+          <h3 style="font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: #2a2520; margin: 0 0 8px 0;">Chronic Disease Indicators Analysis</h3>
+          <p style="color: #8b6f47; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 16px 0;">Identify disease patterns & disparities</p>
+          <p style="color: #5a4f47; font-size: 14px; line-height: 1.8; margin-bottom: 20px;">Analyzed CDC chronic disease data across all 50 U.S. states, uncovering positive correlation between income inequality and diabetes prevalence. Deployed 14 visualizations on AWS S3.</p>
+          <div style="background: #f0e8de; border-left: 3px solid #8b6f47; padding: 16px; border-radius: 6px; margin-bottom: 20px; transition: all 0.3s ease;" onmouseover="this.style.background='#ebe3d8';this.style.borderLeftColor='#6d5836'" onmouseout="this.style.background='#f0e8de';this.style.borderLeftColor='#8b6f47'">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin-bottom: 8px;">Impact</div>
+            <p style="color: #2a2520; font-size: 14px; font-weight: 600; margin: 0;">Surfaced socioeconomic and insurance disparities driving health outcomes</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Python</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">R</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">SQL</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">AWS S3</span>
+          </div>
+          <a href="https://github.com/hariniedunuri" style="display: inline-block; padding: 11px 20px; border: 2px solid #8b6f47; color: #8b6f47; border-radius: 6px; font-size: 13px; font-weight: 600; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 16px rgba(139, 111, 71, 0.2)'" onmouseout="this.style.background='transparent';this.style.color='#8b6f47';this.style.transform='translateY(0)';this.style.boxShadow='none'">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; overflow: hidden; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out 0.1s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 20px 60px rgba(45, 90, 79, 0.15)';this.style.transform='translateY(-8px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <div style="display: grid; grid-template-columns: 300px 1fr; gap: 0;">
+        <div style="background: linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%); padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; transition: all 0.4s ease;" onmouseover="this.style.background='linear-gradient(135deg, #e8dfd4 0%, #d4d0c8 100%)'" onmouseout="this.style.background='linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%)'">
+          <div style="font-size: 48px; margin-bottom: 16px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">🎫</div>
+          <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 600;">Revenue Optimization</div>
+        </div>
+        <div style="padding: 40px;">
+          <h3 style="font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: #2a2520; margin: 0 0 8px 0;">Resale Ticket Pricing Analysis</h3>
+          <p style="color: #8b6f47; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 16px 0;">Optimize pricing strategy</p>
+          <p style="color: #5a4f47; font-size: 14px; line-height: 1.8; margin-bottom: 20px;">Delivered interactive Power BI dashboard with 3 pricing recommendations using 636 U.S. events. Validated mean vs. median to remove outlier bias.</p>
+          <div style="background: #f0e8de; border-left: 3px solid #8b6f47; padding: 16px; border-radius: 6px; margin-bottom: 20px; transition: all 0.3s ease;" onmouseover="this.style.background='#ebe3d8';this.style.borderLeftColor='#6d5836'" onmouseout="this.style.background='#f0e8de';this.style.borderLeftColor='#8b6f47'">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin-bottom: 8px;">Impact</div>
+            <p style="color: #2a2520; font-size: 14px; font-weight: 600; margin: 0;">Price spread identified as 17x stronger predictor. Projected $50K+ recovery</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Python</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Pandas</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Power BI</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">SQL</span>
+          </div>
+          <a href="https://github.com/hariniedunuri" style="display: inline-block; padding: 11px 20px; border: 2px solid #8b6f47; color: #8b6f47; border-radius: 6px; font-size: 13px; font-weight: 600; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 16px rgba(139, 111, 71, 0.2)'" onmouseout="this.style.background='transparent';this.style.color='#8b6f47';this.style.transform='translateY(0)';this.style.boxShadow='none'">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; overflow: hidden; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out 0.2s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 20px 60px rgba(45, 90, 79, 0.15)';this.style.transform='translateY(-8px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <div style="display: grid; grid-template-columns: 300px 1fr; gap: 0;">
+        <div style="background: linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%); padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; transition: all 0.4s ease;" onmouseover="this.style.background='linear-gradient(135deg, #e8dfd4 0%, #d4d0c8 100%)'" onmouseout="this.style.background='linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%)'">
+          <div style="font-size: 48px; margin-bottom: 16px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">📱</div>
+          <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 600;">Product Analytics</div>
+        </div>
+        <div style="padding: 40px;">
+          <h3 style="font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: #2a2520; margin: 0 0 8px 0;">Duolingo Review Churn Analysis</h3>
+          <p style="color: #8b6f47; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 16px 0;">Predict & reduce user churn</p>
+          <p style="color: #5a4f47; font-size: 14px; line-height: 1.8; margin-bottom: 20px;">Predicted churn risk at 0.91 ROC-AUC across 38,819 Google Play reviews. Isolated ad frequency as top driver using logistic regression on TF-IDF features.</p>
+          <div style="background: #f0e8de; border-left: 3px solid #8b6f47; padding: 16px; border-radius: 6px; margin-bottom: 20px; transition: all 0.3s ease;" onmouseover="this.style.background='#ebe3d8';this.style.borderLeftColor='#6d5836'" onmouseout="this.style.background='#f0e8de';this.style.borderLeftColor='#8b6f47'">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin-bottom: 8px;">Impact</div>
+            <p style="color: #2a2520; font-size: 14px; font-weight: 600; margin: 0;">79% recall in churn prediction. 3.08x concentration of ad complaints</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Python</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Scikit-learn</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">NLP</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Power BI</span>
+          </div>
+          <a href="https://github.com/hariniedunuri" style="display: inline-block; padding: 11px 20px; border: 2px solid #8b6f47; color: #8b6f47; border-radius: 6px; font-size: 13px; font-weight: 600; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 16px rgba(139, 111, 71, 0.2)'" onmouseout="this.style.background='transparent';this.style.color='#8b6f47';this.style.transform='translateY(0)';this.style.boxShadow='none'">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; overflow: hidden; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out 0.3s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 20px 60px rgba(45, 90, 79, 0.15)';this.style.transform='translateY(-8px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <div style="display: grid; grid-template-columns: 300px 1fr; gap: 0;">
+        <div style="background: linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%); padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; transition: all 0.4s ease;" onmouseover="this.style.background='linear-gradient(135deg, #e8dfd4 0%, #d4d0c8 100%)'" onmouseout="this.style.background='linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%)'">
+          <div style="font-size: 48px; margin-bottom: 16px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">✈️</div>
+          <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 600;">Time-Series Forecasting</div>
+        </div>
+        <div style="padding: 40px;">
+          <h3 style="font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: #2a2520; margin: 0 0 8px 0;">U.S. Airline Delay Forecasting</h3>
+          <p style="color: #8b6f47; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 16px 0;">Forecast delays for capacity planning</p>
+          <p style="color: #5a4f47; font-size: 14px; line-height: 1.8; margin-bottom: 20px;">Forecasted monthly airline delay hours across 398,233 flight records. Segmented airlines into delay tiers at 99.38% accuracy using SARIMA.</p>
+          <div style="background: #f0e8de; border-left: 3px solid #8b6f47; padding: 16px; border-radius: 6px; margin-bottom: 20px; transition: all 0.3s ease;" onmouseover="this.style.background='#ebe3d8';this.style.borderLeftColor='#6d5836'" onmouseout="this.style.background='#f0e8de';this.style.borderLeftColor='#8b6f47'">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin-bottom: 8px;">Impact</div>
+            <p style="color: #2a2520; font-size: 14px; font-weight: 600; margin: 0;">Revealed seasonal peaks. Distinguished chronic underperformers from reliable carriers</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Python</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">SARIMA</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Scikit-learn</span>
+            <span style="background: #e8dfd4; color: #2a2520; padding: 5px 11px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white'" onmouseout="this.style.background='#e8dfd4';this.style.color='#2a2520'">Statsmodels</span>
+          </div>
+          <a href="https://github.com/hariniedunuri" style="display: inline-block; padding: 11px 20px; border: 2px solid #8b6f47; color: #8b6f47; border-radius: 6px; font-size: 13px; font-weight: 600; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 16px rgba(139, 111, 71, 0.2)'" onmouseout="this.style.background='transparent';this.style.color='#8b6f47';this.style.transform='translateY(0)';this.style.boxShadow='none'">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" data-animate style="padding: 120px 50px; background: #ffffff; max-width: 1200px; margin: 0 auto;">
+  <h2 style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; margin-bottom: 80px; text-align: center; animation: slideInLeft 0.8s ease-out;">Technical Skills</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; padding: 32px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.1)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin: 0 0 20px 0;">Programming Languages</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Python</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">SQL</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">R</div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; padding: 32px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out 0.1s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.1)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin: 0 0 20px 0;">Data Tools & Platforms</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Power BI</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Snowflake</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">AWS</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Databricks</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Excel</div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; padding: 32px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out 0.2s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.1)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin: 0 0 20px 0;">Analytics & Modeling</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Statistical Analysis</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Predictive Modeling</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Feature Engineering</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Time-Series Forecasting</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">NLP</div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; padding: 32px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out 0.3s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.1)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin: 0 0 20px 0;">Libraries & Frameworks</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Pandas</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">NumPy</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Scikit-learn</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Statsmodels</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">TensorFlow</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Matplotlib</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Seaborn</div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; padding: 32px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out 0.4s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.1)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin: 0 0 20px 0;">Databases & Data Warehousing</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Snowflake</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">SQL</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">MongoDB</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Data Pipelines</div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 1px solid #e8dfd4; border-radius: 12px; padding: 32px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); animation: slideInLeft 0.8s ease-out 0.5s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.1)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b6f47; font-weight: 700; margin: 0 0 20px 0;">Methodologies</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">ETL</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Data Validation</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Stakeholder Reporting</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Agile/Scrum</div>
+        <div style="background: #f0e8de; color: #8b6f47; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='#8b6f47';this.style.color='white';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f0e8de';this.style.color='#8b6f47';this.style.transform='translateY(0)'">Git/GitHub</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK ACTIONS -->
+<section data-animate style="padding: 40px 50px; background: #ffffff; max-width: 1200px; margin: 0 auto; margin-bottom: 0;">
+  <h2 style="font-family: 'Syne', sans-serif; font-size: 36px; font-weight: 700; margin: 0 0 20px 0; text-align: center;">What's Next?</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 1000px; margin: 0 auto;">
+    <div style="background: linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%); border-radius: 12px; padding: 40px; text-align: center; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 60px rgba(139, 111, 71, 0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+      <div style="font-size: 44px; margin-bottom: 16px;">💬</div>
+      <h3 style="font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: #2a2520; margin: 0 0 12px 0;">Talk</h3>
+      <p style="font-size: 14px; color: #5a4f47; margin: 0; line-height: 1.6;">Have questions? Let's discuss your analytics needs and how I can help.</p>
+    </div>
+    
+    <div style="background: linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%); border-radius: 12px; padding: 40px; text-align: center; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 60px rgba(139, 111, 71, 0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+      <div style="font-size: 44px; margin-bottom: 16px;">🚀</div>
+      <h3 style="font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: #2a2520; margin: 0 0 12px 0;">Hire</h3>
+      <p style="font-size: 14px; color: #5a4f47; margin: 0; line-height: 1.6;">Looking for an analytics professional? I'm open to full-time opportunities.</p>
+    </div>
+    
+    <div style="background: linear-gradient(135deg, #f0e8de 0%, #e8dfd4 100%); border-radius: 12px; padding: 40px; text-align: center; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 60px rgba(139, 111, 71, 0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+      <div style="font-size: 44px; margin-bottom: 16px;">📊</div>
+      <h3 style="font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: #2a2520; margin: 0 0 12px 0;">Project</h3>
+      <p style="font-size: 14px; color: #5a4f47; margin: 0; line-height: 1.6;">Check out my featured analytics projects and case studies.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section data-animate style="padding: 40px 50px; background: linear-gradient(135deg, #8b6f47 0%, #6d5836 100%); text-align: center; animation: slideInLeft 0.8s ease-out;">
+  <h2 style="font-family: 'Syne', sans-serif; font-size: 44px; font-weight: 700; color: white; margin: 0 0 20px 0;">Let's Work Together</h2>
+  <p style="font-size: 16px; color: #d4e5e0; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">I'm actively seeking full-time roles in data analytics. Let's connect and explore how I can drive impact for your team.</p>
+  <a href="#contact" style="padding: 14px 36px; background: white; color: #8b6f47; border-radius: 6px; font-weight: 700; font-size: 14px; display: inline-block; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0, 0, 0, 0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.2)'">Get In Touch</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-animate style="padding: 0 50px 20px 50px; background: #faf6f0; max-width: 900px; margin: 0 auto; text-align: center;">
+  <h2 style="font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 700; margin-bottom: 20px; animation: slideInLeft 0.8s ease-out;">Let's Connect</h2>
+  <p style="font-size: 16px; color: #6d5f54; margin-bottom: 60px; animation: slideInLeft 0.8s ease-out 0.1s backwards;">Have a question or opportunity? I'd love to hear from you.</p>
+  
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 60px; max-width: 800px; margin-left: auto; margin-right: auto;">
+    <a href="mailto:harini.edunuri16@gmail.com" style="background: white; border: 1px solid #e8dfd4; padding: 32px; border-radius: 12px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 12px; animation: slideInLeft 0.6s ease-out;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.15)';this.style.transform='translateY(-8px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <div style="font-size: 28px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">✉️</div>
+      <div style="font-size: 13px; font-weight: 600; color: #8b6f47; text-transform: uppercase; letter-spacing: 0.5px;">Email</div>
+      <div style="font-size: 13px; color: #5a4f47;">harini.edunuri16@gmail.com</div>
+    </a>
+    
+    <a href="tel:+15716637770" style="background: white; border: 1px solid #e8dfd4; padding: 32px; border-radius: 12px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 12px; animation: slideInLeft 0.6s ease-out 0.1s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.15)';this.style.transform='translateY(-8px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <div style="font-size: 28px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">📞</div>
+      <div style="font-size: 13px; font-weight: 600; color: #8b6f47; text-transform: uppercase; letter-spacing: 0.5px;">Phone</div>
+      <div style="font-size: 13px; color: #5a4f47;">+1 (571) 663-7770</div>
+    </a>
+    
+    <a href="https://linkedin.com/in/harinireddy07/" style="background: white; border: 1px solid #e8dfd4; padding: 32px; border-radius: 12px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 12px; animation: slideInLeft 0.6s ease-out 0.2s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.15)';this.style.transform='translateY(-8px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <div style="font-size: 28px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">💼</div>
+      <div style="font-size: 13px; font-weight: 600; color: #8b6f47; text-transform: uppercase; letter-spacing: 0.5px;">LinkedIn</div>
+      <div style="font-size: 13px; color: #5a4f47;">Connect</div>
+    </a>
+    
+    <a href="https://github.com/hariniedunuri" style="background: white; border: 1px solid #e8dfd4; padding: 32px; border-radius: 12px; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 12px; animation: slideInLeft 0.6s ease-out 0.3s backwards;" onmouseover="this.style.borderColor='#8b6f47';this.style.boxShadow='0 12px 40px rgba(139, 111, 71, 0.15)';this.style.transform='translateY(-8px)'" onmouseout="this.style.borderColor='#e8dfd4';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+      <div style="font-size: 28px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">⚡</div>
+      <div style="font-size: 13px; font-weight: 600; color: #8b6f47; text-transform: uppercase; letter-spacing: 0.5px;">GitHub</div>
+      <div style="font-size: 13px; color: #5a4f47;">View Work</div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding: 24px 50px; background: #ffffff; border-top: 1px solid #e8dfd4; text-align: center; color: #999; font-size: 12px; animation: slideInLeft 0.8s ease-out;">
+  © 2026 Harini Reddy Edunuri. All rights reserved.
+</footer>
+
+<style>
+@keyframes slideDownFade { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+
+</body>
+</html>
